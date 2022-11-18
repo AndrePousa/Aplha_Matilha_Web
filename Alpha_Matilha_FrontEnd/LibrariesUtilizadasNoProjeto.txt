@@ -1,0 +1,4 @@
+
+
+//instaled components
+npm install -D @types/styled-components 

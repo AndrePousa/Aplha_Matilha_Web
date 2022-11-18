@@ -1,0 +1,12 @@
+* {
+  box-sinzing:border-box;
+}
+
+body {
+  margin:0;
+  //background-color:#EEE;
+  background-image:url('./src/assets/06.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:100%
+}
