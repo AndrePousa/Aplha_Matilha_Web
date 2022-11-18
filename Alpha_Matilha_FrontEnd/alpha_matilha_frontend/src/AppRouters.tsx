@@ -5,22 +5,23 @@ import Header from './components/Header/Header';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
-import Login2 from './pages/login/Login2';
 import Registration from './pages/registration/Registration';
 
 
 const AppRouters = () => {
 
+  const [logad, setLogad] = useState(true);
+
   return(
     <BrowserRouter>
-    <Header/>
+    {logad !== true ? <Header/> : ''}
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/registration" element={<Registration/>}/>
       </Routes>
-    <Footer/>
+    {logad !== true ? <Footer/> : ''}
     </BrowserRouter>
   );
 }
