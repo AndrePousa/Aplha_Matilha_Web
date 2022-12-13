@@ -1,56 +1,57 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { PageContainer, PageTitle } from "../../components/MainComponents";
-import { PageArea } from "./styled";
+import { Container, ContainerLogin, WrapLogin } from "./styled";
 
 const Login = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return(
-    <PageContainer>
-      <PageTitle>Login</PageTitle>
-      <PageArea>
-      <form >
-          <label className="area">
-            <div className="area--title">E-mail</div>
-            <div className="area--input">
-              <input 
-                type="email" 
-                //disabled={disabled} 
-                //value={email}
-                //onChange={e => setEmail(e.target.value)}
-                required
+    <Container>
+      <ContainerLogin>
+        <WrapLogin>
+          <form className='login-form'>
+            <span className='login-form-title'>
+              <PageTitle>Login</PageTitle>
+            </span>
+            <div className='wrap-input'>
+              <input
+                className={email !== "" ? "has-val input" : "input"}
+                type='email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
+              <span className='focus-input' data-placeholder='Email'></span>
             </div>
-          </label>
-          <label className="area">
-            <div className="area--title">Senha</div>
-            <div className="area--input">
-              <input 
-                type="password" 
-                //disabled={disabled} 
-                //value={password}
-                //onChange={e => setPassword(e.target.value)}
-                required
+
+            <div className='wrap-input'>
+              <input
+                 className={password !== "" ? "has-val input" : "input"}
+                 type='password'
+                 value={password}
+                 onChange={(e) => setPassword(e.target.value)}
               />
+              <span className='focus-input' data-placeholder='Password'></span>
             </div>
-          </label>
-          <label className="area">
-            <div className="area--title">Lembrar Senha</div>
-            <div className="area--input">
-              <input 
-                type="checkbox" 
-                //disabled={disabled}
-                //cheked={rememberPasword} 
-                //onChange={() => setRememberPasword(!rememberPasword)}
-              />
+
+            <div className='container-login-form-btn'>
+              <button className='login-form-btn'>Login</button>
             </div>
-          </label>
-          <label className="area">
-            <div className="area--title"></div>
-            <div className="area--input">
-              <button>Fazer Login</button>
+
+            <div className='text-center'>
+              <span className='txt1'>Não é cadastrado ?</span>
+              <Link className='txt2' to='/registration'>Cadastre-se</Link>
             </div>
-          </label>
-        </form>
-      </PageArea>
-    </PageContainer>
+            <div className='text-center'>
+              <span className='txt1'>Conheça a Alpha Matilha :</span>
+              <Link className='txt2' to='/home'>Entre</Link>
+            </div>
+          </form>
+        </WrapLogin>
+      </ContainerLogin>
+    </Container>
   )
 
 }
