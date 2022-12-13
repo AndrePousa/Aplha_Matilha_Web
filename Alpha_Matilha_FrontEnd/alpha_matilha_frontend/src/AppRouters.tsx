@@ -10,7 +10,7 @@ import Registration from './pages/registration/Registration';
 
 const AppRouters = () => {
 
-  const [logad, setLogad] = useState(true);
+  const [logad, setLogad] = useState(false);
 
   return(
     <BrowserRouter>

@@ -21,7 +21,6 @@ form{
       font-weight:bold;
       font-size:14px;
     }
-
     .area--input{
       flex:1;
 
@@ -53,9 +52,34 @@ form{
 
         &:hover{
           background-color:#006fce;
-        
+
       }
 
+    }
+  }
+  .area--input--numero{
+    width:50px;
+    font-size:14px;
+    border:1px solid #DDD;
+    border-radius:3px;
+    outline:0;
+    transition:all ease .4s;
+
+    &:focus{
+      border:1px solid #333;
+      color:#333;
+    }
+  }
+  .are--classification{
+    font-size:14px;
+    border:1px solid #DDD;
+    border-radius:3px;
+    outline:0;
+    transition:all ease .4s;
+
+    &:focus{
+      border:1px solid #333;
+      color:#333;
     }
   }
 }
