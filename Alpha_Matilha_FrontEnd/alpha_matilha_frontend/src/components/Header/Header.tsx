@@ -23,6 +23,9 @@ const Header = ( ) => {
             <li>
               <Link className="linkHeader" to="/registration">Cadastre-se</Link>
             </li>
+            <li>
+              <Link className="linkHeader" to="/dog_registration">Cadastre os cães</Link>
+            </li>
           </ul>
         </nav>
       </HeaderArea>
