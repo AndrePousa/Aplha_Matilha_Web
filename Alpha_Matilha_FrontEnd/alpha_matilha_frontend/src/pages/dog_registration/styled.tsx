@@ -6,12 +6,18 @@ export const PageArea = styled.div`
   padding:10px;
   box-shadow:0px 0px 3px #999;
 
-form{
+  form {
   background-color:#fff;
   border-radius:3px;
-  //padding:10px;
+  padding:10px;
   box-shadow:0px 0px 3px #999;
 
+  textarea{
+    height:100px;
+    width:100%;
+    outline:0;
+    transition:all ease .4s;
+  } 
   .area{
     display:flex;
     align-items:center;

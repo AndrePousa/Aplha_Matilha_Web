@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { PageContainer, PageTitle } from "../../components/MainComponents";
 import { PageArea } from "./styled";
 
@@ -165,7 +164,9 @@ const Login = () => {
         <label className="area">
           <div className="area--title"></div>
           <div className="area--input">
-            <button>Cadastrar</button>
+            <button>
+              Cadastre-se
+            </button>
           </div>
         </label>
         </form>
