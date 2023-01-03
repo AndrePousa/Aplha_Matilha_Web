@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dogs from './components/Dogs/Modals/ModalDogs';
 import Footer from './components/Footer/FooterArea';
 import Header from './components/Header/Header';
 import About from './pages/about/About';
