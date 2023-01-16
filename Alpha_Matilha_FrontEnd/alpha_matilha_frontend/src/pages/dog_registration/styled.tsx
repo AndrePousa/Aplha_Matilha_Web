@@ -16,17 +16,17 @@ export const PageArea = styled.div`
     height:100px;
     width:100%;
     outline:0;
-    transition:all ease .4s;
+    transition: all ease .4s;
   } 
   .area{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     padding:10px;
     max-width:500px;
     
     .area--title{
       width:200px;
-      text-align:right;
+      text-align: right;
       padding-right:20px;
       font-weight:bold;
       font-size:14px;
