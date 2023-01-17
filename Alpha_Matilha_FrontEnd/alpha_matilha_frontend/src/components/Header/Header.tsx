@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Header = () => {
 
-  const [visibleModal, setVisibleModal] = useState (false);
+  const [visibleModal, setVisibleModal] = useState(false);
 
   const handleModalClickHeader = () =>{
     setVisibleModal(true)

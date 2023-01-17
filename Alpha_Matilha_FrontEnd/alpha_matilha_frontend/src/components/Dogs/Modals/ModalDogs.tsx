@@ -5,7 +5,7 @@ import avatar from "../../../assets/01.png";
 
 const ModalDogs = ({children, visibleModal, setVisibleModal}) =>{
 
-  var dog = new Object();
+  const dog: any = new Object();
   dog.name = "Tyler";
   dog.breed = "Amstaf";
   dog.age = "6";

@@ -5,7 +5,7 @@ export const PageArea = styled.div`
   border-radius:3px;
   padding:10px;
   box-shadow:0px 0px 3px #999;
-
+  
   form {
   background-color:#fff;
   border-radius:3px;
@@ -62,7 +62,6 @@ export const PageArea = styled.div`
 
         &:hover{
           background-color:#006fce;
-
       }
 
     }
