@@ -22,11 +22,11 @@ namespace Alpha_Matilha_Backend.Models
 
         public char SEX { get; set; }
 
-        public Person()
-        {
-            Dog = new Collection<Dog>();
-        }
+        //public Person()
+        //{
+        //    Dog = new Collection<Dog>();
+        //}
 
-        public ICollection<Dog> Dog { get; set; }
+        //public ICollection<Dog> Dog { get; set; }
     }
 }

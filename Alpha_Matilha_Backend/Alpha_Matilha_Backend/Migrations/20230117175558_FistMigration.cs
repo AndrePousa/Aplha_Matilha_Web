@@ -79,22 +79,22 @@ namespace AlphaMatilhaBackend.Migrations
                     Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Active = table.Column<byte>(type: "tinyint", nullable: false),
                     EndOfTheContract = table.Column<DateTime>(name: "End_Of_The_Contract", type: "datetime2", nullable: false),
-                    PersonIDPerson = table.Column<int>(name: "PersonID_Person", type: "int", nullable: true)
+                    //PersonIDPerson = table.Column<int>(name: "PersonID_Person", type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Dog", x => x.IDDog);
-                    table.ForeignKey(
-                        name: "FK_Dog_Person_PersonID_Person",
-                        column: x => x.PersonIDPerson,
-                        principalTable: "Person",
-                        principalColumn: "ID_Person");
+                    //table.ForeignKey(
+                    //    name: "FK_Dog_Person_PersonID_Person",
+                    //    column: x => x.PersonIDPerson,
+                    //    principalTable: "Person",
+                    //    principalColumn: "ID_Person");
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Dog_PersonID_Person",
-                table: "Dog",
-                column: "PersonID_Person");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_Dog_PersonID_Person",
+            //    table: "Dog",
+            //    column: "PersonID_Person");
         }
 
         /// <inheritdoc />

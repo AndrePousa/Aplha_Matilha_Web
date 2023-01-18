@@ -12,12 +12,12 @@ namespace Alpha_Matilha_Backend.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class PersonController : ControllerBase
+    public class PersonsController : ControllerBase
     {
         //somente leitura, não poderá ser alterada depois de atribuida
         private readonly AlphaMatilhaContext _context;
 
-        public PersonController(AlphaMatilhaContext context)
+        public PersonsController(AlphaMatilhaContext context)
         {
             _context = context;
         }
@@ -37,7 +37,7 @@ namespace Alpha_Matilha_Backend.Controllers
 
             if (person == null)
             {
-                return NotFound();
+                return NotFound("Pessoa não encontrada.");
             }
 
             return person;
