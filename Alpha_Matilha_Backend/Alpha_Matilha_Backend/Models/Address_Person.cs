@@ -20,7 +20,7 @@ namespace Alpha_Matilha_Backend.Models
 
         public string City { get; set; }
 
-        public char UF { get; set; }
+        public string UF { get; set; }
     }
 }
 

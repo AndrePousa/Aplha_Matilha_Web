@@ -25,7 +25,7 @@ namespace Alpha_Matilha_Backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Dog>>> GetDog()
         {
-            var dogs = await _context.Dog.ToListAsync();  //Não será rastreada a consulta e otimiza as consultas.
+            var dogs = await _context.Dog.AsNoTracking().ToListAsync();  //Não será rastreada a consulta e otimiza as consultas.
             if(dogs is null)
             {
                 return NotFound("Cachorro não enconrado");
@@ -63,7 +63,7 @@ namespace Alpha_Matilha_Backend.Controllers
             try
             {
                 await _context.SaveChangesAsync();
-                return Ok("Alterado com sucesso.");
+                //return Ok("Alterado com sucesso.");
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -77,7 +77,7 @@ namespace Alpha_Matilha_Backend.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(dog);
         }
 
         // POST: api/Dogs
