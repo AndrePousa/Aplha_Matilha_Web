@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Alpha_Matilha.Domain/1.0.0": {
+        "runtime": {
+          "Alpha_Matilha.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Alpha_Matilha.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

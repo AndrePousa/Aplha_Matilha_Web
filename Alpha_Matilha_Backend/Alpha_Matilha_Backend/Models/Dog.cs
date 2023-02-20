@@ -10,6 +10,7 @@ namespace Alpha_Matilha_Backend.Models
         public int? ID_Client { get; set; }
 
         public int? ID_Trainer { get; set; }
+        public string? Imagem { get; set; }
 
         public string? Name { get; set; }
 

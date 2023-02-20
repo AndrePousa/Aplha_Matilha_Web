@@ -50,7 +50,7 @@ namespace AlphaMatilhaBackend.Migrations
 
                     b.Property<string>("UF")
                         .IsRequired()
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Zip_Code")
                         .IsRequired()
@@ -91,30 +91,34 @@ namespace AlphaMatilhaBackend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_Dog"));
 
-                    b.Property<byte>("Active")
-                        .HasColumnType("tinyint");
+                    b.Property<bool?>("Active")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("End_Of_The_Contract")
+                    b.Property<string>("Breed")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("End_Of_The_Contract")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ID_Client")
+                    b.Property<int?>("ID_Client")
                         .HasColumnType("int");
 
-                    b.Property<int>("ID_Trainer")
+                    b.Property<int?>("ID_Trainer")
                         .HasColumnType("int");
+
+                    b.Property<string>("Imagem")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Start_Training")
+                    b.Property<DateTime?>("Start_Training")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID_Dog");

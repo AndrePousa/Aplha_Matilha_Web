@@ -1,0 +1,15 @@
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.csproj.AssemblyReference.cache
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.AssemblyInfoInputs.cache
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.AssemblyInfo.cs
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.csproj.CoreCompileInputs.cache
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\bin\Debug\net6.0\Alpha_Matilha.Aplication.deps.json
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\bin\Debug\net6.0\Alpha_Matilha.Aplication.dll
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\bin\Debug\net6.0\Alpha_Matilha.Aplication.pdb
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\bin\Debug\net6.0\Alpha_Matilha.Domain.dll
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\bin\Debug\net6.0\Alpha_Matilha.Domain.pdb
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.csproj.CopyComplete
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.dll
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\refint\Alpha_Matilha.Aplication.dll
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\Alpha_Matilha.Aplication.pdb
+C:\projetos\Alpha_Matilha_Web\Alpha_Matilha_Backend_Clean_Architeture\Alpha_Matilha_Backend\Alpha_Matilha.Aplication\obj\Debug\net6.0\ref\Alpha_Matilha.Aplication.dll
