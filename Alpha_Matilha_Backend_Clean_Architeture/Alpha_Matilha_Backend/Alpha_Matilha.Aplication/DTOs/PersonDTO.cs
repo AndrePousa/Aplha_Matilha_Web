@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Aplication.DTOs
 {
-    internal class PersonDTO
+    public class PersonDTO
     {
         public int ID_Person { get; set; }
         public string First_Name { get; set; }

@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Alpha_Matilha.Aplication.Interfaces
 {
-    internal interface IPersonService
+    public interface IPersonService
     {
         Task<IEnumerable<PersonDTO>> GetPersons();
 

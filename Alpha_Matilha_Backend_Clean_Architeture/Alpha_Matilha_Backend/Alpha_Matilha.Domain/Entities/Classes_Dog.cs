@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Domain.Entities
 {
-    public sealed class Classes_Dog
+    public class Classes_Dog
     {
         [Key]
         public int ID_Class { get; set; }

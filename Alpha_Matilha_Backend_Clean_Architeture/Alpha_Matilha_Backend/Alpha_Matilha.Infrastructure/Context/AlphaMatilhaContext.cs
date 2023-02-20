@@ -23,6 +23,8 @@ namespace Alpha_Matilha.Infrastructure.Context
 
         public DbSet<Address_Person> Address_Persons { get; set; }
 
+        public DbSet<Person> Persons { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Aplication.DTOs
 {
-    internal class Classes_DogDTO
+    public class Classes_DogDTO
     {
         public int ID_Class { get; set; }
 

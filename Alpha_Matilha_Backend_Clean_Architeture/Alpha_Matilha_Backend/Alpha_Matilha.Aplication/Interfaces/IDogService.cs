@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Aplication.Interfaces
 {
-    internal interface IDogService
+    public interface IDogService
     {
         Task<IEnumerable<DogDTO>> GetDogs();
 
