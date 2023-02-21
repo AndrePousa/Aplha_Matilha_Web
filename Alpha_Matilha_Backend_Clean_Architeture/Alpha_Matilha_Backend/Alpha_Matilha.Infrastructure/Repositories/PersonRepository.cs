@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Infrastructure.Repositories
 {
-    internal class PersonRepository : IPersonRepository
+    public class PersonRepository : IPersonRepository
     {
         private AlphaMatilhaContext _personContext;
 
@@ -33,7 +33,7 @@ namespace Alpha_Matilha.Infrastructure.Repositories
 
         public async Task<Person> GetByIdAsync(int? id)
         {
-            return await _personContext.Persons.FindAsync();
+            return await _personContext.Persons.FindAsync(id);
         }
 
         public async Task<Person> RemoveAsync(Person person)

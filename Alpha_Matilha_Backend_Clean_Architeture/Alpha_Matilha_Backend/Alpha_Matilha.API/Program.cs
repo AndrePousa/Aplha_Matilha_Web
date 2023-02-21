@@ -21,8 +21,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 
+//Adicionando ao ConfigureService os Services e os Repositorys.
 builder.Services.AddScoped<IAddress_PersonRepository, Address_PersonRepository>();
 builder.Services.AddScoped<IAddress_PersonService, Address_PersonService>();
+
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<IPersonService, PersonService>();
 
 builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 

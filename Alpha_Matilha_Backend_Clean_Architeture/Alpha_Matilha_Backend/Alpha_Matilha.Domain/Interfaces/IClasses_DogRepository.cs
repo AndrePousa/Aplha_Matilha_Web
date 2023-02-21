@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Matilha.Domain.Interfaces
 {
-    internal interface IClasses_DogRepository
+    public interface IClasses_DogRepository
     {
         Task<IEnumerable<Classes_Dog>> GetClasses_DogAsync();
 
