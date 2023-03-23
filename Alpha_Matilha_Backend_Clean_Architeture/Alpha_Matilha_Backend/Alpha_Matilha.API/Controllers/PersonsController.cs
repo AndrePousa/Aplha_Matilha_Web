@@ -33,7 +33,7 @@ namespace Alpha_Matilha.API.Controllers
         {
             var person = await _personService.GetById(id);
 
-            if(person == null)
+            if (person == null)
             {
                 return NotFound("ID não encontrado");
             }
@@ -45,7 +45,7 @@ namespace Alpha_Matilha.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] PersonDTO personDTO)
         {
-            if(personDTO == null)
+            if (personDTO == null)
             {
                 return BadRequest();
             }
@@ -61,7 +61,7 @@ namespace Alpha_Matilha.API.Controllers
         public async Task<ActionResult<Person>> Delete(int id)
         {
             var personDTO = await _personService.GetById(id);
-            if(personDTO == null)
+            if (personDTO == null)
             {
                 return NotFound("Pessoa não encontrada");
             }

@@ -15,11 +15,9 @@ namespace Alpha_Matilha.Infrastructure.Context
 
         }
 
-        //public DbSet<Person> Persons { get; set; }
-
-        //public DbSet<Dog> Dogs { get; set; }
-
         //public DbSet<Classes_Dog> Classes_Dogs { get; set; }
+
+        public DbSet<Dog> Dogs { get; set; }
 
         public DbSet<Address_Person> Address_Persons { get; set; }
 

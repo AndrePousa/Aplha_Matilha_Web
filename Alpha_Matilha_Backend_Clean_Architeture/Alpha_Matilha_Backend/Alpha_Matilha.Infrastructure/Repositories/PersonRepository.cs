@@ -14,9 +14,9 @@ namespace Alpha_Matilha.Infrastructure.Repositories
     {
         private AlphaMatilhaContext _personContext;
 
-        public PersonRepository(AlphaMatilhaContext personContext)
+        public PersonRepository(AlphaMatilhaContext alphaMatilhaContext)
         {
-            _personContext = personContext;
+            _personContext = alphaMatilhaContext;
         }
         public async Task<Person> CreateAsync(Person person)
         {

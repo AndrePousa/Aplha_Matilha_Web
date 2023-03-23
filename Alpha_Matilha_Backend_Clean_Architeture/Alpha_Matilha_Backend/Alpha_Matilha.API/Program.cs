@@ -28,6 +28,9 @@ builder.Services.AddScoped<IAddress_PersonService, Address_PersonService>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 builder.Services.AddScoped<IPersonService, PersonService>();
 
+builder.Services.AddScoped<IDogRepository, DogsRepository>();
+builder.Services.AddScoped<IDogService, DogService>();
+
 builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
