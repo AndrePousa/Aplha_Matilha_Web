@@ -3,6 +3,7 @@ using Alpha_Matilha.Aplication.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Alpha_Matilha.Domain.Entities;
+using Alpha_Matilha.Aplication.Services;
 
 namespace Alpha_Matilha.API.Controllers
 {
@@ -49,6 +50,22 @@ namespace Alpha_Matilha.API.Controllers
 
             return new CreatedAtRouteResult("GetAddress_Person",
                 new { id = address_PersonDTO.ID_Address }, address_PersonDTO);
+        }
+
+        //Atualizando Address_Person
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromBody] Address_PersonDTO address_PersonDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (id != address_PersonDto.ID_Person)
+            {
+                return BadRequest();
+            }
+            await _address_PersonService.UpDate(address_PersonDto);
+            return Ok(address_PersonDto);
         }
 
         [HttpDelete("{id}")]

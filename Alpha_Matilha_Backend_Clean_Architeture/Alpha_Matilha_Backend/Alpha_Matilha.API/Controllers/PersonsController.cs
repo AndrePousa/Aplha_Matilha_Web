@@ -56,6 +56,22 @@ namespace Alpha_Matilha.API.Controllers
                 new { id = personDTO.ID_Person }, personDTO);
         }
 
+        //Atualizando Person
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromBody] PersonDTO personDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (id != personDto.ID_Person)
+            {
+                return BadRequest();
+            }
+            await _personService.UpDate(personDto);
+            return Ok(personDto);
+        }
+
         //Deleta a pessoa por id
         [HttpDelete("{id}")]
         public async Task<ActionResult<Person>> Delete(int id)
